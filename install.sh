@@ -9,7 +9,7 @@ cd /opt/test-svc
 python3 -m venv venv
 /opt/test-svc/venv/bin/pip install -r /opt/test-svc/test_task/requirements.txt
 crontab -l > mycron
-echo "*/5 * * * * /opt/test-svc/venv/bin/python /opt/test-svc/test_task/manage.py logingstatus" >> mycron
+echo "*/10 * * * * /opt/test-svc/venv/bin/python /opt/test-svc/test_task/manage.py logingstatus" >> mycron
 crontab mycron
 rm mycron
 
