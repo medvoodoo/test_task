@@ -58,4 +58,4 @@ coun = 0
 # здесь можно более красиво посчитать суммы, написал в лоб
 for y in matrix.keys():
     coun += len(matrix[y].keys())
-print (coun)
+print coun
